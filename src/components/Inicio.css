@@ -1,0 +1,7 @@
+body {background-color: aquamarine;}
+
+.subcontenedor {display: flex; flex-direction: column;}
+
+.contenedor {display: flex; justify-content: center;}
+
+.img {height: 700px; width: 1200px;}

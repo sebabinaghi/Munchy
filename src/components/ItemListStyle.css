@@ -1,0 +1,18 @@
+.Contenedor {
+border: 1px solid black;
+max-width: fit-content;
+margin: 20px;
+}
+
+h2 {text-align: center; color: green;}
+h3 {text-align: center;}
+
+.productos2 {width: 200px;}
+
+.productos {display: flex; margin: 10px;}
+
+.agregar {
+    color: black;
+    text-align: center;
+    
+}

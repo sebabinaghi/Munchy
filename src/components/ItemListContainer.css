@@ -1,0 +1,13 @@
+.Elementos {display: flex;}
+
+.subelementos {border: 1px solid red; margin: 10px;}
+
+.Contenedor {background-color: rgb(236, 236, 236); border-radius: 20px;}
+
+.agregar {
+    color: black; 
+    background-color: rgb(115, 253, 253);
+    border: 2px solid black;
+}
+
+h1 {text-align: center;}

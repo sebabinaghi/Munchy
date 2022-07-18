@@ -1,4 +1,4 @@
-import ItemDetail  from "./ItemDetail.js";
+import Mock  from "./Mock.js";
 import DetailList from "./DetailList.js";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -11,7 +11,7 @@ const ItemDetailContainer = ({greeting}) => {
       const traerItemPorId = () => {
             return new Promise ((resolve)=> {
                   setTimeout (()=> {
-                        resolve(DetailList.find(obj => obj.id === id))
+                        resolve(Mock.find(obj => obj.id === id))
                   }, 1000)
             })
       }
@@ -20,22 +20,22 @@ const ItemDetailContainer = ({greeting}) => {
             traerItemPorId().then(respuesta => {
                   setItems(respuesta)
             })
-      },)
+      },[id])
 
-      useEffect (() => {
-            const traerProductos2 = new Promise ((res,rej) => {
-                  setTimeout(() => {
-                        res(ItemDetail)
-                  }, 2000);
-            });
+      // useEffect (() => {
+      //       const traerProductos2 = new Promise ((res,rej) => {
+      //             setTimeout(() => {
+      //                   res(Mock)
+      //             }, 2000);
+      //       });
       
-      traerProductos2.then ((info) => {
-            setItems(info);})
-      },[]);
+      // traerProductos2.then ((info) => {
+      //       setItems(info);})
+      // },[]);
 
       return (    
       <div>
-          <DetailList items={[items2]}/>
+          <DetailList items={items2}/>
       </div>
     );
   }

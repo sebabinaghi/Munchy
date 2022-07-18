@@ -1,8 +1,8 @@
 import "./ItemListContainer.css"
-import { Item } from "./Item.js";
 import { useEffect } from "react";
 import { useState } from "react";
 import ItemList from "./ItemList.js";
+import Mock from "./Mock";
 
 
 const ItemListContainer = ({greeting}) => {
@@ -11,7 +11,7 @@ const ItemListContainer = ({greeting}) => {
       useEffect (() => {
             const traerProductos = new Promise ((res,rej) => {
                   setTimeout(() => {
-                        res(Item)
+                        res(Mock)
                   }, 2000);
             });
       

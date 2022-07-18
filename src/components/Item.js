@@ -4,7 +4,7 @@ import "./ItemListStyle.css";
 import { Link } from "react-router-dom";
 
 
-const ItemList = ({items}) => {
+const Item = ({items}) => {
 
     return (
        <>
@@ -34,4 +34,4 @@ const ItemList = ({items}) => {
     )
 }
 
-export default ItemList;
+export default Item;

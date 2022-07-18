@@ -5,8 +5,8 @@ const ItemCount = () => {
     let stock = 10;
 
 
-const [contador, setNuevoValor] = useState(0);
-    if (contador >= 10) alert ("No hay mas stock");
+const [contador, setNuevoValor] = useState(1);
+    if (contador >= 10);
 const Sumar = () => {if (contador < stock) {setNuevoValor (contador +1)}};
 const Restar = () => {contador > 0 ? setNuevoValor (contador -1) : setNuevoValor (contador)};
 

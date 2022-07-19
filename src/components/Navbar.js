@@ -24,14 +24,14 @@ const Navbar = () => {
                         <NavLink style={({isActive}) =>
                         isActive ? { color: "red"} : {color: "rgb(255, 0, 234)"}
                     }
-                    className="link" to={'/categoria/gustos'}>Gustos</NavLink>
+                    className="link" to={'/gustos'}>Gustos</NavLink>
                     </li>
 
                     <li className="Navli">
                         <NavLink style={({isActive}) =>
                         isActive ? { color: "red"} : {color: "rgb(255, 0, 234)"}
                     }
-                    className="link" to={'/categoria/presentaciones'}>Presentaciones</NavLink>
+                    className="link" to={'/presentaciones'}>Presentaciones</NavLink>
                     </li>
 
                     <li className="icono">

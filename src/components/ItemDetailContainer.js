@@ -26,17 +26,6 @@ const ItemDetailContainer = ({greeting}) => {
             })
       },[id])
 
-      // useEffect (() => {
-      //       const traerProductos2 = new Promise ((res,rej) => {
-      //             setTimeout(() => {
-      //                   res(Mock)
-      //             }, 2000);
-      //       });
-      
-      // traerProductos2.then ((info) => {
-      //       setItems(info);})
-      // },[]);
-
       return (    
             cargando ? <Loader/> :
       <div>

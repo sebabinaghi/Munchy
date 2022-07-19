@@ -30,8 +30,8 @@ const Navbar = () => {
                     <li className="Navli">
                         <NavLink style={({isActive}) =>
                         isActive ? { color: "red"} : {color: "rgb(255, 0, 234)"}
-                    }
-                    className="link" to={'/presentaciones'}>Presentaciones</NavLink>
+                        }
+                        className="link" to={'/presentaciones'}>Presentaciones</NavLink>
                     </li>
 
                     <li className="icono">

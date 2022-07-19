@@ -1,5 +1,4 @@
 import React from "react";
-import ItemCount from "./ItemCount";
 import "./ItemListStyle.css";
 import { Link } from "react-router-dom";
 
@@ -17,9 +16,7 @@ const Item = ({items}) => {
                             <div><img className="productos2" alt="producto" src={Item.foto}></img></div>
                             <div><h3>{Item.descripcion}</h3></div>
                             <div><h2>${Item.precio}</h2></div>
-                            <div><ItemCount/></div>
-                            <div><button className="agregar">Agregar a carrito</button></div>
-                            <div>
+                            <div className="boton">
                                 <Link to={`/presentaciones/${Item.id}`}>
                                     <button>VER MÁS</button>
                                 </Link>

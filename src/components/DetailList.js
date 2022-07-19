@@ -1,5 +1,6 @@
 import React from "react";
 import "./DetailList.css";
+import ItemCount from "./ItemCount.js"
 
 
 const DetailList = ({items}) => {
@@ -14,6 +15,8 @@ const DetailList = ({items}) => {
                             <div><h3>{items.descripcion}</h3></div>
                             <div><h2>${items.precio}</h2></div>
                             <div><h3>{items.descripcion2}</h3></div>
+                            <div><ItemCount/></div>
+                            <div className="boton"><button className="agregar">Agregar a carrito</button></div>
                         </div>
        </div>
        </>

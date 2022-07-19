@@ -2,3 +2,7 @@
 
 h2 {color: black;}
 .foto {text-align: center;}
+
+.boton {
+    display: flex; justify-content: center;
+}

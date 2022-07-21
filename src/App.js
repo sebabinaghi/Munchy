@@ -7,6 +7,7 @@ import Presentaciones from './components/Presentaciones';
 import Inicio from './components/Inicio';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Carrito from "./components/Carrito";
+import ItemListContainer from './components/ItemListContainer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Route path='/presentaciones' element={<Presentaciones/>}/>
               <Route path='/carrito' element={<Carrito/>}/>
               <Route path='/presentaciones/:id' element={<ItemDetailContainer/>}/>
+              <Route path='/categoria/:categoria' element={<ItemListContainer/>}/>
               <Route path='*' element={<div>404 NOT FOUND</div>}/>
             </Routes>
         </BrowserRouter>

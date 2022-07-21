@@ -1,9 +1,12 @@
 import React from "react";
 import "./DetailList.css";
 import ItemCount from "./ItemCount.js"
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 
 const DetailList = ({items}) => {
+    const [contador, setNuevoValor] = useState(1);
 
     return (
        <>
@@ -15,9 +18,12 @@ const DetailList = ({items}) => {
                             <div><h3>{items.descripcion}</h3></div>
                             <div><h2>${items.precio}</h2></div>
                             <div><h3>{items.descripcion2}</h3></div>
-                            <div><ItemCount/></div>
+                            <div><ItemCount contador={contador} setNuevoValor={setNuevoValor}/></div>
                             <div className="boton"><button className="agregar">Agregar a carrito</button></div>
-                        </div>
+                            <div><Link to={"/carrito"}>
+                                <div className="boton"><button className="agregar2">Ver carrito</button></div>
+                                </Link></div>
+                            </div>
        </div>
        </>
     )

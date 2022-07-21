@@ -1,22 +1,13 @@
 import "./ItemCount.css"
-import { useState } from "react";
 
-const ItemCount = () => {
-    let stock = 10;
-
-
-const [contador, setNuevoValor] = useState(1);
-    if (contador >= 10);
-const Sumar = () => {if (contador < stock) {setNuevoValor (contador +1)}};
-const Restar = () => {contador > 0 ? setNuevoValor (contador -1) : setNuevoValor (contador)};
-
+const ItemCount = ({contador, setNuevoValor}) => {
+    let stock = 10;  
 
 return (
     <div className="Contador">
-        <p></p>
         <p>{contador}</p>
-        <button onClick={Sumar}>+</button>
-        <button onClick={Restar}>-</button>
+        <button onClick={()=> setNuevoValor (contador +1)}>+</button>
+        <button onClick={()=> setNuevoValor (contador -1)}>-</button>
     </div>
 )
 }

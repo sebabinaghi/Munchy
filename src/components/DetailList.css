@@ -5,5 +5,5 @@ h2 {color: black;}
 
 .boton {display: flex; justify-content: center;}
 
-.productos{display: flex; justify-content: center;}
+.productos {display: flex; justify-content: center; flex-direction: row;}
 p {text-align: center;}

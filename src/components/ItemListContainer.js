@@ -2,13 +2,14 @@ import "./ItemListContainer.css"
 import { useEffect} from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import Item from "./Item.js";
+import ItemList from "./ItemList.js";
 import {Link} from "react-router-dom";
 import {collection, getDocs, getFirestore, query, where} from "firebase/firestore";
 
 const ItemListContainer = ({greeting}) => {
       const [items, setItems] = useState([]);
       const {categoria} = useParams();
+      
       useEffect (() => {
       const querydb = getFirestore();
       const queryColletcion = collection (querydb, "items" );
@@ -33,7 +34,7 @@ const ItemListContainer = ({greeting}) => {
                   <Link to={"/categoria/obleas"}><button className="boton2">OBLEAS</button></Link>
                   <Link to={"/categoria/vasos"}><button className="boton2">VASOS</button></Link>
             </div>
-            <Item items={items}/>
+            <ItemList items={items}/>
       </div>
     );
   }

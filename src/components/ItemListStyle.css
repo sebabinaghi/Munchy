@@ -10,7 +10,7 @@ h3 {text-align: center;}
 
 .productos2 {width: 200px;}
 
-.productos {display: flex; margin: 10px;}
+.product {display: flex; flex-direction: row; margin: 10px; justify-content: center;}
 
 .agregar {
     color: black;
